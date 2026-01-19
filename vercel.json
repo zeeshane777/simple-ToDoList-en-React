@@ -1,0 +1,17 @@
+{
+  "builds": [
+    {
+      "src": "todo-react/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "todo-react/dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
